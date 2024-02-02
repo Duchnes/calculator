@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(90deg, #4d00a5, rgb(58, 0, 99));
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.calculator {
+    border: 1px solid #2d2e42;
+    border-radius: 20px;
+    overflow: hidden;
+    width: 350px;
+    height: 500px;
+    background-color: #2d2e42;
+    box-shadow: -15px -15px 21px -8px rgba(0, 0, 0, 0.384);
+}
+
+.display {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #2d2e42;
+    height: 60px;
+    color: #ccc;
+    margin-right: 10px;
+    margin-left: 11px;
+    width: 308px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: 0px solid #ccc;
+    box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.01),
+    -5px -5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #2d2e42;
+    border-radius: 20px;
+    color: #ccc;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 8px 8px 20px rgba(255, 255, 255, 0.1), -8px -8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.operator {
+    color: #8829f6;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2d2e42;
+}
+
+.double-width {
+    grid-column: span 2;
+}
+
+.double-height {
+    grid-row: span 2;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2e42;
+    padding: 10px;
+    width: 97.8%;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #ccc;
+    margin: 0;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}

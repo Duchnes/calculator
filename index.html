@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator :: Duchnes</title>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+
+            <div class="display" id="display">0</div>
+
+            <div class="buttons">
+                <button class="operator" onclick="clearDisplay()">AC</button>
+                <button class="operator" onclick="deleteLastChar()"><-</button>
+                <button class="operator" onclick="appendCharacter('/')">/</button>
+                <button class="operator" onclick="appendCharacter('*')">*</button>
+                <button onclick="appendCharacter('7')">7</button>
+                <button onclick="appendCharacter('8')">8</button>
+                <button onclick="appendCharacter('9')">9</button>
+                <button class="operator" onclick="appendCharacter('-')">-</button>
+                <button onclick="appendCharacter('4')">4</button>
+                <button onclick="appendCharacter('5')">5</button>
+                <button onclick="appendCharacter('6')">6</button>
+                <button class="double-height operator" onclick="appendCharacter('+')">+</button>
+                <button onclick="appendCharacter('1')">1</button>
+                <button onclick="appendCharacter('2')">2</button>
+                <button onclick="appendCharacter('3')">3</button>
+                <button class="double-width" onclick="appendCharacter('0')">0</button>
+                <button onclick="appendCharacter('.')">.</button>
+                <button class="operator" onclick="calculateResult()">=</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Made by Duchnes</p>
+        <div class="footer-links">
+            <a href="https://github.com/Duchnes" target="_blank">Github</a>
+            <a href="https://discordapp.com/users/917462073145962568" target="_blank">Discord</a>
+            <a href="https://steamcommunity.com/id/Duchnes/" target="_blank">Steam</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
